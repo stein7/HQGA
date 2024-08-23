@@ -6,6 +6,7 @@ from .util import load_file, transform_bb
 import os.path as osp
 import numpy as np
 import nltk
+nltk.data.path.append('/home/sslunder0/nltk_data')
 import h5py
 import time
 

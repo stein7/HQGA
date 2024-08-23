@@ -20,6 +20,8 @@ def main(args):
     use_bert = True
     spatial = True
     if spatial:
+        # video_feature_path = '../data/{}/'.format(dataset, task)
+        # video_feature_cache = '../data/{}/'.format(dataset, task)
         video_feature_path = '../data/{}/{}/'.format(dataset, task)
         video_feature_cache = '../data/{}/{}/'.format(dataset, task)
     else:

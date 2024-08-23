@@ -1,0 +1,58 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	22374558927184 [label="
+ (1, 128, 32, 32)" fillcolor=darkolivegreen1]
+	22374558930496 [label=ReluBackward0]
+	22374558930592 -> 22374558930496
+	22374558930592 [label=NativeBatchNormBackward0]
+	22374558930400 -> 22374558930592
+	22374558930400 [label=ConvolutionBackward0]
+	22374558930736 -> 22374558930400
+	22374558930736 [label=ReluBackward0]
+	22374558930976 -> 22374558930736
+	22374558930976 [label=NativeBatchNormBackward0]
+	22374558931072 -> 22374558930976
+	22374558931072 [label=ConvolutionBackward0]
+	22374558931264 -> 22374558931072
+	22370825236048 [label="vid_encoder.bbox_conv.0.weight
+ (64, 5, 1, 1)" fillcolor=lightblue]
+	22370825236048 -> 22374558931264
+	22374558931264 [label=AccumulateGrad]
+	22374558931216 -> 22374558931072
+	22370816183088 [label="vid_encoder.bbox_conv.0.bias
+ (64)" fillcolor=lightblue]
+	22370816183088 -> 22374558931216
+	22374558931216 [label=AccumulateGrad]
+	22374558931024 -> 22374558930976
+	22374559148608 [label="vid_encoder.bbox_conv.1.weight
+ (64)" fillcolor=lightblue]
+	22374559148608 -> 22374558931024
+	22374558931024 [label=AccumulateGrad]
+	22374558930880 -> 22374558930976
+	22374558925904 [label="vid_encoder.bbox_conv.1.bias
+ (64)" fillcolor=lightblue]
+	22374558925904 -> 22374558930880
+	22374558930880 [label=AccumulateGrad]
+	22374558930688 -> 22374558930400
+	22374558926384 [label="vid_encoder.bbox_conv.3.weight
+ (128, 64, 1, 1)" fillcolor=lightblue]
+	22374558926384 -> 22374558930688
+	22374558930688 [label=AccumulateGrad]
+	22374558930640 -> 22374558930400
+	22374558926464 [label="vid_encoder.bbox_conv.3.bias
+ (128)" fillcolor=lightblue]
+	22374558926464 -> 22374558930640
+	22374558930640 [label=AccumulateGrad]
+	22374558930256 -> 22374558930592
+	22374558926544 [label="vid_encoder.bbox_conv.4.weight
+ (128)" fillcolor=lightblue]
+	22374558926544 -> 22374558930256
+	22374558930256 [label=AccumulateGrad]
+	22374558930448 -> 22374558930592
+	22374558926624 [label="vid_encoder.bbox_conv.4.bias
+ (128)" fillcolor=lightblue]
+	22374558926624 -> 22374558930448
+	22374558930448 [label=AccumulateGrad]
+	22374558930496 -> 22374558927184
+}
